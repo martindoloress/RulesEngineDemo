@@ -1,0 +1,15 @@
+[
+  {
+    "WorkflowName": "Discount",
+    "Rules": [
+      {
+        "RuleName": "GiveDiscount10",
+        "Expression": "input1.country == \"aus\" && input1.loyaltyFactor <= 2 && input1.totalPurchasesToDate >= 5000 && input2.totalOrders > 2 && input3.noOfVisitsPerMonth > 2"
+      },
+      {
+        "RuleName": "GiveDiscount20",
+        "Expression": "input1.country == \"aus\" && input1.loyaltyFactor == 3 && input1.totalPurchasesToDate >= 10000 && input2.totalOrders > 2 && input3.noOfVisitsPerMonth > 2"
+      }
+    ]
+  }
+]
